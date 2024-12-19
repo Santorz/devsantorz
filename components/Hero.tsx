@@ -35,7 +35,8 @@ function Hero() {
 
   return (
     <div
-      className="h-screen flex flex-col gap-y-3 capitalize justify-center items-center px-4"
+      id="home"
+      className="h-screen flex flex-col gap-y-3  justify-center items-center"
       onMouseMove={(e) => {
         x.set(e.clientX);
         y.set(e.clientY);
@@ -49,29 +50,41 @@ function Hero() {
       }}
     >
       <motion.div
-        style={{
-          rotateX: mouseMove ? rotateX : 0,
-          rotateY: mouseMove ? rotateY : 0,
-          transition: "0.1s",
-        }}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="capitalize flex flex-col gap-y-3  justify-center items-center"
       >
-        <Image
-          src="/person.png"
-          alt="Person Image"
-          width={400}
-          height={400}
-          priority={true}
-          className="w-[150px] h-auto"
-        />
-      </motion.div>
+        <motion.div
+          style={{
+            rotateX: mouseMove ? rotateX : 0,
+            rotateY: mouseMove ? rotateY : 0,
+            transition: "0.1s",
+          }}
+        >
+          <Image
+            src="/person.png"
+            alt="Person Image"
+            width={400}
+            height={400}
+            priority={true}
+            className="w-[150px] h-auto"
+          />
+        </motion.div>
 
-      <h1 className="text-xl sm:text-3xl font-bold tracking-wide text-gray-500">
-        My Name is Peter Hart &
-      </h1>
-      <p className="text-lg text-gray-700 tracking-wide">
-        I like animations 🤗
-      </p>
-      <div className="flex gap-6 text-yellow-600 my-4">
+        <h1 className="text-xl sm:text-3xl font-bold tracking-wide text-gray-500 dark:text-white transition-colors">
+          My Name is Peter Hart &
+        </h1>
+        <p className="text-lg text-gray-700 tracking-wide dark:text-gray-200 transition-colors">
+          I like animations 🤗
+        </p>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="flex gap-6 text-yellow-600 my-4"
+      >
         <a
           href="#"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
@@ -102,13 +115,16 @@ function Hero() {
         >
           <RiGithubLine />
         </a>
-      </div>
-      <a
+      </motion.div>
+      <motion.a
         href="#"
+        initial={{ opacity: 0, x: -30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.7 }}
         className="text-white bg-red-400 px-3 py-1 rounded-lg tracking-wide hover:bg-red-500 transition-colors"
       >
         Talk to me
-      </a>
+      </motion.a>
     </div>
   );
 }

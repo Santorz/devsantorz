@@ -83,8 +83,11 @@ function About() {
   }
 
   return (
-    <div className="min-h-screen px-12 sm:px-40 flex flex-col items-center justify-center">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-600 mb-14 self-start">
+    <div
+      id="about"
+      className="min-h-screen flex flex-col items-center justify-center"
+    >
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-600 dark:text-white transition-colors mb-14 self-start">
         About Me
       </h2>
       <div className="w-full flex items-center justify-between md:justify-center">
@@ -95,11 +98,11 @@ function About() {
           height={400}
           className="w-[300px] lg:w-[300px] lg:block hidden h-auto"
         />
-        <div className="bg-zinc-100 relative p-5 text-justify rounded-xl max-w-[800px]">
-          <span className="absolute -left-5 top-20 scale-[5] text-zinc-100 hidden lg:block">
+        <div className="bg-zinc-100 relative p-5 text-justify rounded-xl max-w-[800px] dark:bg-zinc-700 transition-colors">
+          <span className="absolute -left-7 top-20 scale-[5] text-zinc-100 hidden lg:block dark:text-zinc-700 transition-colors">
             <RiArrowLeftSFill />
           </span>
-          <p className="text-xs leading-5 font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
+          <p className="text-xs dark:text-white leading-8 font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
             Hi, I'm Nick, a web developer & designer. I blend the technical
             skills of web development with the creative aspects of web design. I
             code in HTML, CSS, JavaScript, React, NextJS... to build functional
@@ -131,7 +134,7 @@ function About() {
             >
               {number1}
             </motion.span>
-            <span className="text-sm tracking-wide text-gray-500">
+            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
               GitHub repo
             </span>
           </div>
@@ -146,7 +149,7 @@ function About() {
             >
               {number2}
             </motion.span>
-            <span className="text-sm tracking-wide text-gray-500">
+            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
               Successful Projects
             </span>
           </div>
@@ -161,7 +164,7 @@ function About() {
             >
               {number3}
             </motion.span>
-            <span className="text-sm tracking-wide text-gray-500">
+            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
               Satisfied clients
             </span>
           </div>
@@ -176,7 +179,7 @@ function About() {
             >
               {number4}
             </motion.span>
-            <span className="text-sm tracking-wide text-gray-500">
+            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
               Awards and Recognition
             </span>
           </div>
