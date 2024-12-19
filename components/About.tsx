@@ -103,7 +103,7 @@ function About() {
             <RiArrowLeftSFill />
           </span>
           <p className="text-xs dark:text-white leading-8 font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
-            Hi, I'm Nick, a web developer & designer. I blend the technical
+            Hi, I&apos;m Nick, a web developer & designer. I blend the technical
             skills of web development with the creative aspects of web design. I
             code in HTML, CSS, JavaScript, React, NextJS... to build functional
             and responsive websites, while also using design tools like
