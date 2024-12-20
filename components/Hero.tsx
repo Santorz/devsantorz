@@ -72,11 +72,11 @@ function Hero() {
           />
         </motion.div>
 
-        <h1 className="text-xl sm:text-3xl font-bold tracking-wide text-gray-500 dark:text-white transition-colors">
-          My Name is Peter Hart &
+        <h1 className="text-xl text-center sm:text-3xl font-bold tracking-wide text-gray-500 dark:text-white transition-colors">
+          My Name is Saint Tarila Brisbe &
         </h1>
-        <p className="text-lg text-gray-700 tracking-wide dark:text-gray-200 transition-colors">
-          I like animations 🤗
+        <p className="text-lg text-center text-gray-700 tracking-wide dark:text-gray-200 transition-colors">
+          I write code, and i talk about Christ and Tech 🤗
         </p>
       </motion.div>
       <motion.div
