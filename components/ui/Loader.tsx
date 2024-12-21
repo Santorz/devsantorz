@@ -14,7 +14,7 @@ function Loader() {
   return (
     <motion.div
       initial={{ top: 0 }}
-      animate={{ top: loader ? "-150%" : 0 }}
+      animate={{ top: loader ? "-120%" : 0 }}
       transition={{ duration: 0.5 }}
       className="w-screen z-50 h-screen fixed left-0 top-0 flex justify-center items-center bg-gradient-to-t from-yellow-50 to-red-50"
     >
